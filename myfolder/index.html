@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Expense Tracker</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <section class="budget-input">
+      <label>Total Budget (₹):</label>
+      <input type="number" id="total-budget" placeholder="Enter your budget" />
+    </section>
+
+    <section class="add-expense">
+      <label>Category:</label>
+      <input type="text" id="category" placeholder="e.g. Rent, Grocery" />
+      <label>Amount (₹):</label>
+      <input type="number" id="amount" placeholder="e.g. 3000" />
+      <button onclick="addExpense()">Add Expense</button>
+    </section>
+
+    <section class="expense-list">
+      <h2>Expenses</h2>
+      <ul id="expense-list"></ul>
+    </section>
+
+    <section class="summary">
+      <p><strong>Total Budget:</strong> ₹<span id="budget-amount">0</span></p>
+      <p><strong>Total Spent:</strong> ₹<span id="spent-amount">0</span></p>
+      <p><strong>Remaining:</strong> ₹<span id="remaining-amount">0</span></p>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
